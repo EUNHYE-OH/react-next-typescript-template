@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,10 +13,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "types": ["cypress", "jest","@testing-library/cypress", "@testing-library/jest-dom"],
     "paths": {
       "@/*": ["./src/*"],
-      "@components/*": ["components/*"],
-      "@features/*": ["features/*"]
+      "@components/*": ["./src/components/*"],
+      "@features/*": ["./src/features/*"]
     }
   },
   "include": [

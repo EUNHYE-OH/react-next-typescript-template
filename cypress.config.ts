@@ -4,7 +4,7 @@ import { unlinkSync } from "fs";
 
 export default defineConfig({
   e2e: {
-    baseUrl: "http://localhost:8081",
+    baseUrl: "http://localhost:3000",
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on("after:spec", (spec, results) => {
